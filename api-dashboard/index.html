@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Dashboard</title>
+  <link rel="stylesheet" href="../theme.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="../index.html">← Back to Home</a>
+    <div>
+      <h1>API Dashboard</h1>
+      <p>Load live posts from a public REST API</p>
+    </div>
+    <button id="loadBtn" class="primary">Load Data</button>
+  </header>
+
+  <main class="content">
+    <section class="summary">
+      <div class="tile">
+        <span class="label">Status</span>
+        <span id="status" class="value">Idle</span>
+      </div>
+      <div class="tile">
+        <span class="label">Records</span>
+        <span id="count" class="value">0</span>
+      </div>
+      <div class="tile">
+        <span class="label">Source</span>
+        <span class="value">JSONPlaceholder</span>
+      </div>
+    </section>
+
+    <section id="cards" class="cards" aria-live="polite">
+      <div class="empty" id="empty">Click “Load Data” to fetch posts.</div>
+    </section>
+  </main>
+
+  <footer class="footer">Made by Sakshi Kumari</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

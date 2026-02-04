@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Bank App</title>
+  <link rel="stylesheet" href="../theme.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="../index.html">← Back to Home</a>
+    <div>
+      <h1>Bank Application</h1>
+      <p>Create an account and manage balance.</p>
+    </div>
+  </header>
+
+  <main class="panel">
+    <h2>Account Setup</h2>
+    <input type="text" id="name" placeholder="Account Holder Name" />
+    <input type="number" id="balance" placeholder="Initial Balance" />
+    <button id="createBtn">Create Account</button>
+
+    <hr />
+
+    <h2>Transactions</h2>
+    <input type="number" id="amount" placeholder="Enter Amount" />
+    <div class="actions">
+      <button id="depositBtn">Deposit</button>
+      <button id="withdrawBtn" class="ghost">Withdraw</button>
+    </div>
+
+    <p id="msg" class="message">No account created yet.</p>
+  </main>
+
+  <footer class="footer">Made by Sakshi Kumari</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

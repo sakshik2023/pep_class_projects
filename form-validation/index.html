@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="../theme.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="../index.html">← Back to Home</a>
+    <div>
+      <h1>Student Registration Form</h1>
+      <p>Fill in details and submit.</p>
+    </div>
+  </header>
+
+  <main class="panel">
+    <form id="studentForm" novalidate>
+      <label>
+        Full Name
+        <input type="text" id="name" placeholder="Your name" />
+        <span class="error" id="nameError"></span>
+      </label>
+
+      <label>
+        Course
+        <select id="course">
+          <option value="">Select course</option>
+          <option value="BCA">BCA</option>
+          <option value="BSc">BSc</option>
+          <option value="BTech">BTech</option>
+          <option value="MCA">MCA</option>
+        </select>
+        <span class="error" id="courseError"></span>
+      </label>
+
+      <label>
+        Registration Number
+        <input type="text" id="reg" placeholder="REG-1234" />
+        <span class="error" id="regError"></span>
+      </label>
+
+      <label>
+        Age
+        <input type="number" id="age" placeholder="18" min="16" max="60" />
+        <span class="error" id="ageError"></span>
+      </label>
+
+      <fieldset class="group">
+        <legend>Gender</legend>
+        <label class="inline">
+          <input type="radio" name="gender" value="Female" /> Female
+        </label>
+        <label class="inline">
+          <input type="radio" name="gender" value="Male" /> Male
+        </label>
+        <label class="inline">
+          <input type="radio" name="gender" value="Other" /> Other
+        </label>
+        <span class="error" id="genderError"></span>
+      </fieldset>
+
+      <label class="checkbox">
+        <input type="checkbox" id="terms" /> I confirm the details are correct.
+      </label>
+      <span class="error" id="termsError"></span>
+
+      <button type="submit">Submit</button>
+      <p id="success" class="success"></p>
+    </form>
+  </main>
+
+  <footer class="footer">Made by Sakshi Kumari</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

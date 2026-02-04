@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Number Match Game</title>
+  <link rel="stylesheet" href="../theme.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="../index.html">← Back to Home</a>
+    <h1>Number Match Game</h1>
+    <p>Click the button to generate 4 random numbers.</p>
+  </header>
+
+  <main class="game">
+    <section class="panel">
+      <button id="generateBtn" class="primary">Generate Numbers</button>
+      <p id="result" class="result">Click the button to start.</p>
+
+      <div class="guess">
+        <input id="guessInput" type="number" placeholder="Enter your guess (1-20)" />
+        <button id="guessBtn" class="ghost">Guess</button>
+      </div>
+
+      <div class="grid" id="grid">
+        <div class="box">?</div>
+        <div class="box">?</div>
+        <div class="box">?</div>
+        <div class="box">?</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Made by Sakshi Kumari</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Voting Machine</title>
+  <link rel="stylesheet" href="../theme.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="../index.html">← Back to Home</a>
+    <div>
+      <h1>Live Voting Machine</h1>
+      <p>Click a party to cast a vote.</p>
+    </div>
+  </header>
+
+  <main class="panel">
+    <div class="buttons">
+      <button data-party="A">Vote Party A</button>
+      <button data-party="B">Vote Party B</button>
+      <button data-party="C">Vote Party C</button>
+    </div>
+
+    <div class="results">
+      <p>Party A Votes: <span id="a">0</span></p>
+      <p>Party B Votes: <span id="b">0</span></p>
+      <p>Party C Votes: <span id="c">0</span></p>
+    </div>
+  </main>
+
+  <footer class="footer">Made by Sakshi Kumari</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

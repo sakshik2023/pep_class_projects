@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="../theme.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="../index.html">← Back to Home</a>
+    <div>
+      <h1>Quiz Application</h1>
+      <p>Answer all questions and submit.</p>
+    </div>
+  </header>
+
+  <main class="panel">
+    <form id="quizForm">
+      <div class="question">
+        <p>1. What is the capital of India?</p>
+        <label><input type="radio" name="q1" value="Delhi" /> Delhi</label>
+        <label><input type="radio" name="q1" value="Mumbai" /> Mumbai</label>
+        <label><input type="radio" name="q1" value="Kolkata" /> Kolkata</label>
+      </div>
+
+      <div class="question">
+        <p>2. Which language is used for web development?</p>
+        <label><input type="radio" name="q2" value="Python" /> Python</label>
+        <label><input type="radio" name="q2" value="JavaScript" /> JavaScript</label>
+        <label><input type="radio" name="q2" value="C++" /> C++</label>
+      </div>
+
+      <div class="question">
+        <p>3. React is a ___?</p>
+        <label><input type="radio" name="q3" value="Framework" /> Framework</label>
+        <label><input type="radio" name="q3" value="Library" /> Library</label>
+        <label><input type="radio" name="q3" value="Database" /> Database</label>
+      </div>
+
+      <button type="button" id="submitBtn">Submit Quiz</button>
+    </form>
+
+    <div id="result" class="result">Your score will appear here.</div>
+  </main>
+
+  <footer class="footer">Made by Sakshi Kumari</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

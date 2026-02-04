@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="../theme.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="../index.html">← Back to Home</a>
+    <div>
+      <h1>Weather App</h1>
+      <p>Search any city and view live weather.</p>
+    </div>
+  </header>
+
+  <main class="panel">
+    <div class="search">
+      <input id="cityInput" type="text" placeholder="Enter city (e.g. Delhi)" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <section class="weather" aria-live="polite">
+      <div class="weather__main">
+        <div class="temp" id="temp">--°C</div>
+        <div class="desc" id="desc">No data</div>
+      </div>
+      <div class="weather__meta">
+        <div>
+          <span class="label">City</span>
+          <span id="city">-</span>
+        </div>
+        <div>
+          <span class="label">Wind</span>
+          <span id="wind">-</span>
+        </div>
+        <div>
+          <span class="label">Humidity</span>
+          <span id="humidity">-</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="history">
+      <h2>Recent Searches</h2>
+      <div id="historyList" class="history__list">No recent searches.</div>
+    </section>
+  </main>
+
+  <footer class="footer">Made by Sakshi Kumari</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

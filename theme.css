@@ -1,0 +1,63 @@
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --primary: #2563eb;
+  --primary-dark: #1e3a8a;
+  --text: #0f172a;
+  --muted: #475569;
+  --shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+.topbar,
+.navbar {
+  background: var(--primary-dark) !important;
+  color: #fff !important;
+}
+
+.back {
+  color: #dbeafe !important;
+}
+
+.panel,
+.section {
+  background: var(--surface) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+button,
+.btn,
+.primary {
+  background: var(--primary) !important;
+  color: #fff !important;
+}
+
+.ghost {
+  background: transparent !important;
+  color: var(--primary-dark) !important;
+  border: 1px solid rgba(37, 99, 235, 0.3) !important;
+}
+
+input,
+select,
+textarea {
+  background: #fff !important;
+  color: var(--text) !important;
+  border: 1px solid #cbd5f5 !important;
+}
+
+.card {
+  background: var(--surface) !important;
+}
+
+.footer {
+  color: var(--muted) !important;
+}

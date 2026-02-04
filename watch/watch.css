@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0 55%, #c7d2fe);
+  color: #0f172a;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.topbar {
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #1e3a8a;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.25);
+}
+
+.topbar h1 {
+  font-size: 22px;
+}
+
+.back {
+  color: #dbeafe;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.watch {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.watch__card {
+  background: #ffffff;
+  padding: 36px 42px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+  text-align: center;
+  display: grid;
+  gap: 12px;
+  min-width: min(420px, 90vw);
+}
+
+.watch__time {
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.watch__date {
+  font-size: 16px;
+  color: #475569;
+}
+
+.watch__meta {
+  font-size: 14px;
+  color: #64748b;
+  display: inline-flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  opacity: 0.6;
+}
+
+.footer {
+  text-align: center;
+  padding: 18px 12px 30px;
+  color: #475569;
+}
